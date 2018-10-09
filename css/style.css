@@ -1,0 +1,32 @@
+/* Así se comenta*/
+/* Aqí configuramos los estilos*/
+
+html{
+	background-color: grey;
+}
+
+
+
+/* hi, h5 le agrega la configuracion a ambos*/
+h1, h5{
+	color: color;
+	color: #ED26BF;
+	color: rgb(66, 134, 244); /*Va a colorear con este color el titulo 1 porque
+								el ultimo se sobrepone a los anteriores
+								*/
+
+}
+
+p {
+	color: red;
+}
+
+#ParrafoEstilo{
+	color: green;
+}
+
+/* Llamamos la clase que va en img*/
+.ImagenRe{
+	height: 125px;
+	width: 200px;
+}
