@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<lang="es">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="css/PlantillaTest.css">
+</head>
+<body bgcolor="#996B6B">
+<div class="principal" align="center">
+	<form>
+		<!--Utiliza tus conocimientos psarevios de modelado de cajas, selectores(basicos y avanzados) 
+		y forms, para crear un formulario llamativo,innovador y unico del tema que mas te llame
+		la atencion, utilizando almenos 8 elementos input diferentes. Ademas de comentar el funcionamiento de cada linea.
+		¿Que elementos debo usar?, tu decides! 😉
+		**********El mejor diseño tendra un punto extra sobre primer proyecto.*****************
+		Nota:Esto es una plantilla que tu puedes modificar como tu quieras, lo que implica que dependiendo del tema de tu interes, la adaptes a su contenido(cambiando imagenes,tamaños,colores,etc).
+		--> 
+
+
+
+		<!-- El titulo que hace alución al nombre de pila -->
+	    <label for="fname"><h1>¿Cómo te llamó tu mamá?</h1></label>
+	    <input type="text" autofocus id="fname" name="firstname" placeholder="Tu nombre..">
+
+
+	    <br> <!-- Para hacer una separacion -->
+	    <br></br>
+	    <!-- apellido -->
+	    <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
+	    </br>
+
+
+		<!-- Cómo te dicen tus compitas? -->
+		<label for="fapodo"><h2>¿Cómo deberia llamarte?</h2></label>
+	    <input type="text" id="fapodo" name="apodo" placeholder="Nombre de calle, krnal">
+
+
+		<!-- No entremos en discusión. Hombre o Mujer -->
+	    <p><h3>Sexo:</h3>
+  		<form action="">
+  		
+  		<!-- Radio button para elegir ólo uno y se le agrega requeride para que sea forsozo alv -->
+  		<input type="radio" name="gender" value="male" required> Macho<br>
+  		<input type="radio" name="gender" value="female"> Señorita<br>
+		
+		</form>
+		</p>
+
+
+		<!-- pais -->
+	    <label for="country"><h1></h1>Pais</h1></label>
+	    <select id="country" name="country">
+	      
+			<!-- despliega opciones de paises -->
+	      <option value="australia">Mexico</option>
+	      <option value="canada">Canada</option>
+	      <option value="usa">USA</option>
+	    </select>
+
+	
+			<!-- un titulo meh -->
+	    	 <div>
+	    	 <label for="lreason"><h1>¿Para qué crees que es esto?</h1></label>
+	    	 <!--Es para hacer mas grande el cuadro del txt area -->
+	    		<textarea type="textarea" id="reasontxt" rows="2" cols="200" style= "width:500px; height: 250px";> 
+
+	    		 
+	    		 
+	    	</textarea>
+	    	</div>
+
+<!-- Edad  -->
+	    <div>
+	    	<div><h1>Edad:</h1></div>
+	    	<div> <!-- Definimos fecha minima y maxima en el calendario -->
+	    	<input type="date" name="cumpleanios" step="1" min="1980-01-01" max="2018-12-31" value="<?php echo date("Y-m-d");? style= "width:120px; height: 85px;">
+	    	</div>
+	    	
+	    <br> </br>
+		
+		<div><h3>¿Qué crees que encontraras después del botón?</h3></div>
+	    <input class="check" type="checkbox">
+		<label>Perros</label>
+
+		<input class="check" type="checkbox">
+		<label>Gatos</label>
+
+		<input class="check" type="checkbox">
+		<label>Dinosaurios</label>
+
+		<input class="check" type="checkbox">
+		<label>Monas de guayaba</label>
+
+		<input class="check" type="checkbox">
+		<label>Amorsh</label>
+
+		<input class="check" type="checkbox">
+		<label>El exito</label>
+
+		<input class="check" type="checkbox">
+		<label>El fin del sufrimiento</label>	     	     
+		
+		<br>     
+	    <br>
+
+	     <form>
+  
+  <h3>De esto depende la humanidad y todo lo que amas...</h3>
+
+  <select class="" name="option">
+    <option value="" disabled selected>Elige sabiamente</option>
+    <option value="1">Te sientas en el pastel</option>
+    <option value="2">Te comes el pastel</option>
+
+</select>
+	<br>
+	<br>
+     <div>
+     	<label>Categoria de pornosotros fav:  </label>
+     </div>
+     <input list="browsers">
+
+<datalist id="pregunta">
+  <option value="Teen">
+  <option value="midgets">
+  <option value="Savage">
+  <option value="Blondies">
+  <option value="cosplay">
+  <option value="interracial">
+  <option value="cosplay">
+  <option value="Oriental">
+  <option value="Fetiche">	
+</datalist> 
+     
+	
+
+  </select>
+  
+</form>
+    	
+	  	<br>
+		
+	  	
+
+	</form>
+
+<label>¿Tu cara de cuantos likes consideras</label>
+<input type="range" min="-1" max="69">
+
+<br>
+<br>
+<button onclick="location.href='https://www.instagram.com/poligz/?hl=es-la'">Vamos pues!</button>
+
+	    </div>
+
+</div>
+</body>
+</html>

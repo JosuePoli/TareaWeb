@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+}
+
+
+.body{
+  background-color: teal;
+  color: white;
+}
+
+body{
+background: black; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.principal{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+border-radius: 5%;
+background-color: black;
+opacity: 0.80;
+}
+
+label{
+	color: white;
+	font-size: 1.5em;
+}
+
+form{
+	margin: 4% 5%;
+}
+
+input[type = text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #9e9d24;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #afb42b ;
+}
+
+ <div class="w3-display-container">
+  <img src="Xoloitzcuincle-2.jpg" alt="Lights">
+  <div class="w3-display-topleft w3-container">Top Left</div>
+  <div class="w3-display-topright w3-container">Top Right</div>
+  <div class="w3-display-bottomleft w3-container">Bottom Left</div>
+  <div class="w3-display-bottomright w3-container">Bottom Right</div>
+  <div class="w3-display-left w3-container">Left</div>
+  <div class="w3-display-right w3-container">Right</div>
+  <div class="w3-display-middle w3-large">Middle</div>
+  <div class="w3-display-topmiddle w3-container">Top Middle</div>
+  <div class="w3-display-bottommiddle w3-container">Bottom Middle</div>
+</div> 
+
+datalist{
+    display: default;
+}
