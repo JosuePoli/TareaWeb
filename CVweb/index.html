@@ -1,130 +1,43 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<title>Josué González Policarpo</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta name="viewport" content="width=[Pixeles del mínimo ancho para visualizar bien la web]" />
-</head>
-<body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Josué Glz | CV</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
 
-<div class="background">
-<div class="nav">
-	<a class="a active" href="#">HOME</a>
-	<a class="b" href="#">Sobre mi</a>
-	<a class="c" href="#">Educacion</a>
-	<a class="d" href="#">Contacto</a>
-</div>
-
-<div class="content">
-	
-	<div class="home">
-		<h1>Josué González Policarpo</h1>
-		<h3>| ESTUDIANTE | BASES DE DATOS |  </h3>
-	</div>
-
-	<div class="about">
-		<p>
-			<b>Hola, me presento...</b><br>
-				Me llamo<b>Josué González Policarpo</b>, nací el 27 de Diciembre de 1998 <br>
-				Resido actualmente en Naucalpan, Estado de México.<br>
-				Desde temprana edad mostré un interés por intentar hacer diferentas las cosa, recurriendo al <b><i>Do it yourself!(DIY) </i></b></p>
-			<p>
-				Desde pequeño he participado en diferentes deportes logrando distinciones en mis participaciones. <br>
-				A lo largo de 19 años he tenido un gran gusto por <i> el mundo geek </i>, <b>la literatura</b>, y por la <i> aventura social</i>. Dado que mi formación académica, no sólamente es universtaria sino que ha tenido un enfoque humanista a medida que he avanzado.
-
-
-			</p>
-				<div class="io">
-				<img src="images/io.jpg" align="center"  width="150" height="250">
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="home.html" class="logo">Mi C.V.</a>
+					<nav id="nav">
+						<a href="home.html">Home</a>
+						<a href="sobre-mi.html">Sobre mi</a>
+						<a href="educacion.html">Educación</a>
+						<a href="contacto.html">Contáctame</a>
+					</nav>
 				</div>
-	</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
-	<div class="edu">
-		<div class="image">
-			<img src="images/unam.jpeg" style="max-width:100%;width:auto;height:auto;">
-		</div>
-		<div class="image">
-			<img src="images/enallt.jpeg" style="max-width:100%;width:auto;height:auto;">
-		</div>
-		<div class="image">
-			<img src="images/proteco.jpeg" style="max-width:100%;width:auto;height:auto;"/>
-		</div>
-			<br>
-				<br>
-					<br>
-						<br>
-		<p><b><h3>Mi formación educativa...</h3></b><br>
-		Desde <b>2014 pertenezco a la Universidad Nacional Autónoma de México</b> <br>
-		Estudio, actualmente, la <b>Licenciatura en Informática, en la Facultado de Contaduria y Administración(2016 - Actual)</b><br>
-		En <b>2018 ingresé al Programa de Tecnología en Cómputo </b> de la Facultad de Ingenieria del UNAM. </p>
-		<p>Cursé en 2017 obtuve mi constancia en el idioma inglés por parte de la <b>Escuela Nacional de Lenguas, Lingüística y Traducción</b>	 de la UNAM. Con un nivel <b><i>Upper Intermidiate</i></b> de acuerdo al <b> Marco Común Europeo de Referencia para las Lenguas. </b></p>
-		<p>A lo largo de mi formación Universitaria, he reforzado intereses y conocimientos, y he adquirido otras más.</p>
+		<!-- Home -->
+			<section id="home">
+				<div class="inner">
+					<h1>JOSUÉ GONZÁLEZ POLICARPO</h1> <span>
+					<h3 >ESTUDIANTE | BASE DE DATOS</h3></span>
+					<ul class="actions">
+						<li><a href="sobre-mi.html" class="button alt">Empecemos</a></li>
+					</ul>
+				</div>
+			</section>
 
-	</div>
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
 
-	<div class="contact">
-		<div class="contactform">
-			<form action="index.html" method="post">
-				<input type="text" name="" class="inputtext" placeholder="Nombre Completo">
-				<input type="text" name="" class="inputtext" placeholder="Empresa">
-				<input type="text" name="" class="inputtext" placeholder="Correo">
-				<textarea cols="4" rows="6" class="inputmessage" placeholder="Agregar una descripcion al mensaje"></textarea>
-			<input type="button" name="" class="submitbutton" value="Contactar" onclick="parent.location='mailto:der.poli127@hotmail.com'">
-
- 
- 			</form>
-		</div>
-	</div>
-</div>
-	
-</div>
-
-
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('a').click(function(){
-		//alert("i am click");
-		var selected = $(this);
-		$('a').removeClass('active');
-		$(selected).addClass('active');
-	});
-	var $a = $('.a'),
-	$b = $('.b'),
-	$c = $('.c'),
-	$d = $('.d'),
-	$home = $('.home'),
-	$about = $('.about'),
-	$edu = $('.edu'),
-	$contact = $('.contact');
-
-	$a.click(function(){
-		$home.fadeIn();
-		$about.fadeOut();
-		$edu.fadeOut();
-		$contact.fadeOut();
-	});
-	$b.click(function(){
-		$about.fadeIn();
-		$home.fadeOut();
-		$edu.fadeOut();
-		$contact.fadeOut();
-	});
-	$c.click(function(){
-		$edu.fadeIn();
-		$home.fadeOut();
-		$about.fadeOut();
-		$contact.fadeOut();
-	});
-	$d.click(function(){
-		$contact.fadeIn();
-		$home.fadeOut();
-		$edu.fadeOut();
-		$about.fadeOut();
-	});
-});
-</script>
-</body>
+	</body>
 </html>
